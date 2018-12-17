@@ -1,124 +1,143 @@
 // ------------------ //
 // Google Webfonts    //
 // ------------------ //
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700");
 
 // ------------------ //
 // Utility classes    //
 // ------------------ //
 ::-moz-selection {
-    background: $white;
-    color: $primary-color;
+  background: $white;
+  color: $primary-color;
 }
 
 ::selection {
-    background: $white;
-    color: $primary-color;
+  background: $white;
+  color: $primary-color;
 }
 
 .info-container {
-    padding-top: 10px;
-    padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .coming-soon {
-    margin-top: 40px;
-    border: 1px solid  #211542;
+  margin-top: 40px;
+  border: 1px solid #211542;
 
-    .main-title {
-        border-right: 1px solid $white;
-        min-height: 130px;
+  .main-title {
+    border-right: 1px solid $white;
+    min-height: 130px;
+
+    @include breakpoint(small only) {
+      border-right: none;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  .splash-image {
+    min-height: 400px;
+    box-shadow: 0px 3px 8px 0px #211542;
+    background-size: cover;
+
+    @include breakpoint(small only) {
+      background: transparent url("../assets/img/slide_01_mobile.jpg") no-repeat center center;
+      min-height: 600px;
     }
 
-    h1 {
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 33px;
-        text-transform: uppercase;
-        color: $white;
+    @include breakpoint(medium up) {
+        background: transparent url("../assets/img/slide_01.jpg") no-repeat center center;
     }
+  }
 
-    .splash-image {
-        min-height: 400px;
-        box-shadow: 0px 3px 8px 0px  #211542;
-        background: transparent url('../assets/img/slide_01.jpg') no-repeat center center;
-        background-attachment: cover;
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    color: $white;
+    text-align: center;
+    text-shadow: 2px 2px 5px #211542;
+  }
+
+  hr {
+    border-bottom: 5px solid $white;
+    width: 40px;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .coming-soon-txt {
+  }
+
+  a {
+    color: $white;
+    margin-right: 20px;
+    font-size: 34px;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #220f4c;
+      transition: all 0.4s;
     }
+  }
 
-    h2 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 28px;
-        color: $white;
-        text-align: center;
+  p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .social {
+    border-left: 1px solid $white;
+    padding-top: 40px;
+    text-align: center;
+
+    @include breakpoint(small only) {
+      border-left: none;
     }
-
-    hr {
-        border-bottom: 5px solid $white;
-        width: 40px;
-        float: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    .coming-soon-txt {
-
-    }
-
-    a {
-        color: $white;
-        margin-right: 20px;
-        font-size: 34px;
-        transition: all 0.4s;
-
-        &:hover {
-            color: #220F4C;
-            transition: all 0.4s;
-        }
-    }
-
-    p {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .social {
-        border-left: 1px solid $white;
-    }
+  }
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 12px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: $white;
+  text-align: center;
+
+  a {
     color: $white;
-    text-align: center;
 
-    a {
-        color: $white;
-        &:hover {
-            color: #220F4C;
-            transition: all 0.4s;
-        }
+    &:hover {
+      color: #220f4c;
+      transition: all 0.4s;
     }
+  }
 
-    .fa-heart {
-        color: crimson;
-        transition: all 0.4s;
+  .fa-heart {
+    color: crimson;
+    transition: all 0.4s;
 
-        &:hover {
-            color: #220F4C;
-            transition: all 0.4s;
-            font-size: 16px;
-        }
+    &:hover {
+      color: deeppink;
+      transition: all 0.4s;
+      font-size: 16px;
     }
+  }
 
-    .logo {
-        height: 15px;
-        margin: -3px 0 0 3px;
-        transition: all 0.4s;
+  .logo {
+    height: 15px;
+    margin: -3px 0 0 3px;
+    transition: all 0.4s;
 
-        &:hover {
-            opacity: .3;
-        }
+    &:hover {
+      opacity: 0.3;
     }
+  }
 }
