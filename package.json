@@ -14,7 +14,7 @@
     "email": "pablo@4topixel.com"
   },
   "dependencies": {
-    "foundation-sites": "^6.5.3",
+    "foundation-sites": "^6.6.1",
     "jquery": "^3.4.1",
     "motion-ui": "~2.0.0",
     "what-input": "^5.2.3"
