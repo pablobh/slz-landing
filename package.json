@@ -20,7 +20,7 @@
     "what-input": "^5.2.10"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
